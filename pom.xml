@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>25</maven.compiler.release>
         <exec.mainClass>CHCWORKGKF.CHCWORKGKF</exec.mainClass>
-        <lib.path>${project.basedir}/lib</lib.path>
+        <lib.path>C:/Users/gkfit/OneDrive/Documents/CHCWORKGKF/lib</lib.path>
     </properties>
 
     <dependencies>
@@ -19,49 +19,49 @@
             <artifactId>javafx-base</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/javafx.base.jar</systemPath>
+            <systemPath>${lib.path}/javafx.base.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/javafx.controls.jar</systemPath>
+            <systemPath>${lib.path}/javafx.controls.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/javafx.fxml.jar</systemPath>
+            <systemPath>${lib.path}/javafx.fxml.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>javafx-graphics</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/javafx.graphics.jar</systemPath>
+            <systemPath>${lib.path}/javafx.graphics.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>javafx-media</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/javafx.media.jar</systemPath>
+            <systemPath>${lib.path}/javafx.media.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>javafx-web</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/javafx.web.jar</systemPath>
+            <systemPath>${lib.path}/javafx.web.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>javafx-swing</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/javafx.swing.jar</systemPath>
+            <systemPath>${lib.path}/javafx.swing.jar</systemPath>
         </dependency>
 
         <!-- Local JARs -->
@@ -70,56 +70,56 @@
             <artifactId>apcslib</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/apcslib.jar</systemPath>
+            <systemPath>${lib.path}/apcslib.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>BreezySwing</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/BreezySwing.jar</systemPath>
+            <systemPath>${lib.path}/BreezySwing.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>bsh</artifactId>
             <version>2.0b4</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/bsh-2.0b4.jar</systemPath>
+            <systemPath>${lib.path}/bsh-2.0b4.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>exp4j</artifactId>
             <version>0.4.8</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/exp4j-0.4.8.jar</systemPath>
+            <systemPath>${lib.path}/exp4j-0.4.8.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>jfx-incubator-input</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/jfx.incubator.input.jar</systemPath>
+            <systemPath>${lib.path}/jfx.incubator.input.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>jfx-incubator-richtext</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/jfx.incubator.richtext.jar</systemPath>
+            <systemPath>${lib.path}/jfx.incubator.richtext.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>TerminalIO</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/TerminalIO.jar</systemPath>
+            <systemPath>${lib.path}/TerminalIO.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>local</groupId>
             <artifactId>TurtleGraphics</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>${project.basedir}/lib/TurtleGraphics.jar</systemPath>
+            <systemPath>${lib.path}/TurtleGraphics.jar</systemPath>
         </dependency>
     </dependencies>
 
