@@ -146,9 +146,9 @@ public class LibraryGKF {
     }
 
     public static void main(String[] args){
-        String bookName = "";
-        String bookAuthor = "";
-        String bookISBN = "";
+        String bookName;
+        String bookAuthor;
+        String bookISBN;
 
         LibraryGKF lib = new LibraryGKF();
         Scanner sc = new Scanner(System.in);
@@ -185,9 +185,6 @@ public class LibraryGKF {
                     System.out.println("Book ISBN?: ");
                     bookISBN = sc.nextLine();
                     lib.addBook(new BookGKF(bookName, bookAuthor, bookISBN, false));
-                    bookName = "";
-                    bookAuthor = "";
-                    bookISBN = "";
                     break;
                 case "4", "add a file of books":
                     try {
@@ -199,6 +196,7 @@ public class LibraryGKF {
                         String[] data = line.split(",");
                         lib.addBook(new BookGKF(data[0].strip(), data[1].strip(), data[2].strip(), false));
                     }
+                    scan.close();
                 }
                 catch (IOException e){
                     System.out.println("Invalid File");
@@ -219,23 +217,18 @@ public class LibraryGKF {
                             System.out.println("Invalid Book");
                         }
                     }
-                    bookName = "";
-                    bookAuthor = "";
-                    bookISBN = "";
                     break;
                 case "6","check out a book":
                     System.out.println("Book Title?: ");
                     bookName = sc.nextLine();
                     System.out.println("Patron?: ");
                     lib.checkOutBook(bookName, sc.nextLine());
-                    bookName = "";
                     break;
                 case "7","return a book":
                     System.out.println("Book Title?: ");
                     bookName = sc.nextLine();
                     System.out.println("Patron?: ");
                     lib.returnBook(bookName, sc.nextLine());
-                    bookName = "";
                     break;
                 case "8","show library":
                     System.out.println("\n");
@@ -263,10 +256,10 @@ public class LibraryGKF {
                     System.out.println("Invalid Option");
                     break;
 
-
-
             }
         }
+
+        sc.close();
 
         
 
