@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TestPens",
+            "request": "launch",
+            "mainClass": "Shapes.TestPens",
+            "projectName": "CHCWORKGKF"
+        },
+        {
+            "type": "java",
             "name": "TestShapes",
             "request": "launch",
             "mainClass": "Shapes.TestShapes",
