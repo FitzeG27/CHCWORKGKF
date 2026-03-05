@@ -1,8 +1,10 @@
 package Shapes;
 
-import TurtleGraphics.*;
 import java.awt.Color;
+
 import TerminalIO.KeyboardReader;
+import TurtleGraphics.Pen;
+import TurtleGraphics.StandardPen;
 
 public class TestShapes {
    public static void main (String[] args) {
