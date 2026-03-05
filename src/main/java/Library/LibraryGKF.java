@@ -1,16 +1,17 @@
 package Library;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.io.*;
 public class LibraryGKF {
     
     private ArrayList<BookGKF> books;
     private ArrayList<PatronGKF> patrons;
 
     public LibraryGKF(){
-        books = new ArrayList<BookGKF>();
-        patrons = new ArrayList<PatronGKF>();
+        books = new ArrayList<>();
+        patrons = new ArrayList<>();
     }
 
     public LibraryGKF(ArrayList<BookGKF> b, ArrayList<PatronGKF> p){

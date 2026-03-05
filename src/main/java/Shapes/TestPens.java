@@ -1,7 +1,10 @@
 package Shapes;
 
-import TurtleGraphics.*;
-import java.awt.Color;
+import TurtleGraphics.Pen;
+import TurtleGraphics.RainbowPen;
+import TurtleGraphics.StandardPen;
+import TurtleGraphics.WigglePen;
+//import java.awt.Color;
 
 public class TestPens {
    public static void main (String[] args){
