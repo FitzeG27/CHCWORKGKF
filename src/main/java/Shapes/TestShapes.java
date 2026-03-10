@@ -14,12 +14,12 @@ public class TestShapes {
       Shape s1 = new Circle (20, 20, 20);
       Shape s2 = new Rect (-20, -20, 10, 20);
       Shape s3 = new RightTriangle(10, 20, -20, -100);
-      Shape s4 = new Wheel(-50, 20, 10, 8);
+      Shape s4 = new Wheel(-50, 20, 10, 20);
       
       // Draw the circle and rectangle
       s1.draw (p);
       s2.draw (p);
-      //s3.stretchBy(2);
+      s3.stretchBy(2);
       s3.draw (p);
       s4.draw(p);
       

@@ -19,7 +19,7 @@ public class Wheel extends Circle {
                               // to initialize xPos, yPos, and radius.
       spokes = s;             // Now initialize spokes.
    }
- 
+   @Override
    public void draw (Pen p) {
       // Draw the wheel's rim by calling the draw method in the superclass.
       super.draw (p);
@@ -37,7 +37,7 @@ public class Wheel extends Circle {
    public void setSpokes (int s) {
       spokes = s;
    }
-
+   @Override
    public String toString() {
       String str = "WHEEL\n"
                  + "Radius: " + radius + "\n"

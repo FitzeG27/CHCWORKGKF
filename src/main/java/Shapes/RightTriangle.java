@@ -19,14 +19,15 @@ public class RightTriangle implements Shape {
         xCoordinate = x;
         yCoordinate = y;
     }
+    @Override
     public double area(){
         return .5*height*width;
     }
-
+    @Override
     public double perimeter(){
         return height + width + Math.hypot(width, height);
     }
-
+    @Override
     public void draw(Pen p){
         p.up();
         p.move(xCoordinate, yCoordinate);
@@ -36,25 +37,25 @@ public class RightTriangle implements Shape {
         p.move(xCoordinate, yCoordinate);
         p.up();
     }
-
+    @Override
     public double getXPos(){
         return xCoordinate;
     }
-
+    @Override
     public double getYPos(){
         return yCoordinate;
     }
-
+    @Override
     public void move(double xloc, double yloc){
         xCoordinate = xloc;
         yCoordinate = yloc;
     }
-
+    @Override
     public void stretchBy(double f){
         height*=f;
         width*=width;
     }
-
+    @Override
     public String toString(){
         return "Height: " + height +
         "\nWidth: " + width +
