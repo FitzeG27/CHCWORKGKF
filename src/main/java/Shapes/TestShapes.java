@@ -1,6 +1,7 @@
 package Shapes;
 
 import java.awt.Color;
+import java.util.ArrayList;
 
 import TerminalIO.KeyboardReader;
 import TurtleGraphics.Pen;
@@ -10,6 +11,7 @@ public class TestShapes {
    public static void main (String[] args) {
 
       // Declare and instantiate a pen, a circle and a rectangle
+      ArrayList<Shape> shapes = new ArrayList<>();
       Pen p = new StandardPen();
       Shape s1 = new Circle (20, 20, 20);
       Shape s2 = new Rect (-20, -20, 10, 20);
@@ -17,16 +19,15 @@ public class TestShapes {
       Shape s4 = new Wheel(-50, 20, 10, 20);
       
       // Draw the circle and rectangle
-      s1.draw (p);
-      s2.draw (p);
-      s3.stretchBy(2);
-      s3.draw (p);
-      s4.draw(p);
-      
-      // Display a description of the circle and rectangle
-      System.out.println (s1);  // toString method called implicitly
-      System.out.println (s2);  // toString method called implicitly
-      System.out.println (s3);
+      shapes.add(s1);
+      shapes.add(s2);
+      shapes.add(s3);
+      shapes.add(s4);
+
+      for (Shape s : shapes){
+         s.draw(p);
+         System.out.println(s);
+      }
       
       // Pause until the user is ready to continue
       KeyboardReader reader = new KeyboardReader();

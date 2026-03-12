@@ -7,15 +7,13 @@ public class Rect extends AbstractShape {
    private double height, width;
 
    public Rect() {
-      xPos = 0;
-      yPos = 0;
+      super();
       height = 1;
       width = 1;
    }
 
    public Rect (double xLoc, double yLoc, double h, double w) {
-      xPos = xLoc;
-      yPos = yLoc;
+      super(xLoc, yLoc);
       height = h;
       width = w;
    }

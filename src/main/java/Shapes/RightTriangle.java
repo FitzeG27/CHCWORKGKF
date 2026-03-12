@@ -1,23 +1,20 @@
 package Shapes;
 import TurtleGraphics.Pen;
-public class RightTriangle implements Shape {
+public class RightTriangle extends AbstractShape {
     
     private double height;
     private double width;
-    private double xCoordinate, yCoordinate;
 
     public RightTriangle(){
+        super();
         height = 1;
         width = 1;
-        xCoordinate = 0;
-        yCoordinate = 0;
     }
 
     public RightTriangle(double h, double w, double x, double y){
+        super(x, y);
         height = h;
         width = w;
-        xCoordinate = x;
-        yCoordinate = y;
     }
     @Override
     public double area(){
@@ -30,26 +27,14 @@ public class RightTriangle implements Shape {
     @Override
     public void draw(Pen p){
         p.up();
-        p.move(xCoordinate, yCoordinate);
+        p.move(xPos, yPos);
         p.down();
-        p.move(xCoordinate+width, yCoordinate);
-        p.move(xCoordinate, yCoordinate+height);
-        p.move(xCoordinate, yCoordinate);
+        p.move(xPos+width, yPos);
+        p.move(xPos, yPos+height);
+        p.move(xPos, yPos);
         p.up();
     }
-    @Override
-    public double getXPos(){
-        return xCoordinate;
-    }
-    @Override
-    public double getYPos(){
-        return yCoordinate;
-    }
-    @Override
-    public void move(double xloc, double yloc){
-        xCoordinate = xloc;
-        yCoordinate = yloc;
-    }
+    
     @Override
     public void stretchBy(double f){
         height*=f;
@@ -57,10 +42,11 @@ public class RightTriangle implements Shape {
     }
     @Override
     public String toString(){
-        return "Height: " + height +
+        return "Right Triangle:\n" + 
+        super.toString() +
+        "\nHeight: " + height +
         "\nWidth: " + width +
-        "\nHypotenuse: " + Math.hypot(width, height) +
-        "\nCoordinates: (" + xCoordinate + ", " + yCoordinate + ")"; 
+        "\nHypotenuse: " + Math.hypot(width, height);
     }
 
 
