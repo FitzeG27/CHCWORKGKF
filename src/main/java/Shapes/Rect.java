@@ -4,7 +4,6 @@ import TurtleGraphics.Pen;
 
 public class Rect extends AbstractShape {
 
-   private double xPos, yPos;
    private double height, width;
 
    public Rect() {
@@ -21,14 +20,17 @@ public class Rect extends AbstractShape {
       width = w;
    }
  
+   @Override
    public double area() {
       return height * width;
    }
  
+   @Override
   public double perimeter() {
       return 2 * height + 2 * width;
    }
 
+   @Override
    public void draw (Pen p) {
       p.up();
       p.move (xPos, yPos);
@@ -39,11 +41,13 @@ public class Rect extends AbstractShape {
       p.turn (-90); p.move (height);
    }
 
+   @Override
    public void stretchBy (double factor) {
       height *= factor;
       width *= factor;
    }
 
+   @Override
    public String toString() {
       return "RECTANGLE:\n" + super.toString();
    }
