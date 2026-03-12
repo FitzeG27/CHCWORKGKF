@@ -2,7 +2,7 @@ package Shapes;
 
 import TurtleGraphics.Pen;
 
-public class Rect implements Shape {
+public class Rect extends AbstractShape {
 
    private double xPos, yPos;
    private double height, width;
@@ -39,31 +39,13 @@ public class Rect implements Shape {
       p.turn (-90); p.move (height);
    }
 
-   public double getXPos() {
-      return xPos;
-   }
-
-   public double getYPos() {
-      return yPos;
-   }
-
-   public void move (double xLoc, double yLoc) {
-      xPos = xLoc;
-      yPos = yLoc;
-   }
-
    public void stretchBy (double factor) {
       height *= factor;
       width *= factor;
    }
 
    public String toString() {
-      String str = "RECTANGLE\n"
-                 + "Width & Height: " + width + " & " + height +"\n"
-                 + "(X,Y) Position: (" + xPos + "," + yPos + ")\n" 
-                 + "Area: " + area()+"\n"
-					   + "Perimeter: " + perimeter();
-      return str;
+      return "RECTANGLE:\n" + super.toString();
    }
 }
 

@@ -62,7 +62,8 @@ abstract public class AbstractShape implements Shape {
 
    public String toString(){
       String str = "(X,Y) Position: (" + xPos + "," + yPos + ")\n"
-                 + "Area: " + area();
+                 + "Area: " + area() +
+                 "\nPerimeter: " + perimeter();
       return str;
    }
 
