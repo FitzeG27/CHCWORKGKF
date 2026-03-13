@@ -35,8 +35,10 @@ public class TestShapes {
       
       // Erase the circle and rectangle
       p.setColor (Color.white);
-      s1.draw (p);
-      s2.draw (p);
+      s1.draw(p);
+      s2.draw(p);
+      s3.draw(p);
+      s4.draw(p);
       p.setColor (Color.red);
       
       // Move the circle and rectangle, change their size, and redraw
