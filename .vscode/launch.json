@@ -3,6 +3,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "QuickSort",
+            "projectName": "CHCWORKGKF"
+        },
+        {
+            "type": "java",
             "name": "TestPens",
             "request": "launch",
             "mainClass": "Shapes.TestPens",
